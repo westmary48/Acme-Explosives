@@ -1,0 +1,112 @@
+{
+  "products": [{
+      "independence-day": {
+          "id": "product0",
+          "type": "type0",
+          "name": "Independence Day",
+          "description": "Red White and Blue fireworks for July 4th celebrations."
+    },
+    "star-fireworks": {
+      "id": "product1",
+      "type": "type0",
+      "name": "star fireworks",
+      "description": "fireworks that shoot out into starts for July 4th celebration"
+    },
+    "Willow": {
+      "id": "product2",
+      "type": "type0",
+      "name": "Willow",
+      "description": "The willow resembles a chrysanthemum, but with long burning silver or gold stars that produce a soft, dome-shaped weeping willow-like effect."
+    },
+    "Cake": {
+      "id": "product3",
+      "type": "type1",
+      "name": "Cake",
+      "description": "With a fuse that sets off a variety of effects in succession, a cake is essentially many Roman candles fused together."
+    },
+    "Roman-Candle": {
+      "id": "product4",
+      "type": "type1",
+      "name": "Roman Candle",
+      "description": "A Roman candle is a long cylinder that can discharge either a single large star or a series of them between short intervals."
+    },
+    "Peony": {
+      "id": "product5",
+      "type": "type1",
+      "name": "Peony",
+      "description": "The most common type of firework, the peony shell is characterized by a spherical break of colored stars that burn without generating a trail of sparks, or tail effect."
+    },
+    "green-fireworks": {
+      "id": "product6",
+      "type": "type2",
+      "name": "green fireworks",
+      "description": "Fireworks that replace perchlorate with nitrogen-rich materials or nitrocellulose that burn cleaner and produce less smoke"
+    },
+    "Catherine-Wheels": {
+      "id": "product7",
+      "type": "type2",
+      "name": "Catherine Wheels",
+      "description": "Nice alternative and can be less harmful for the environment"
+    },
+    "Noise-free-ground-fireworks": {
+      "id": "product8",
+      "type": "type2",
+      "name": "Noise-free ground fireworks",
+      "description": "Loud explosions are sure to frighten your backyard critters and are better for the environment"
+    },
+    "cranes": {
+      "id": "product9",
+      "type": "type3",
+      "name": "cranes",
+      "description": "a large, tall machine used for moving heavy objects by suspending them from a projecting arm or beam."
+    },
+    "bulldozers": {
+      "id": "product10",
+      "type": "type3",
+      "name": "bulldozers",
+      "description": "a powerful tractor with a broad upright blade at the front for clearing ground."
+    },
+    "excavators": {
+      "id": "product11",
+      "type": "type3",
+      "name": "excavators",
+      "description": "a large machine for removing soil from the ground, especially on a building site."
+    },
+    "skid-steers": {
+      "id": "product12",
+      "type": "type4",
+      "name": "skid steers/skid loaders",
+      "description": "used in demolition applications for moving materials around a site, demolishing a buildings’ interior walls, and clearing out medium to small sized debris"
+    },
+    "Mobile-demolition-processors": {
+      "id": "product13",
+      "type": "type4",
+      "name": "Mobile demolition processors",
+      "description": "High powered attachments use to crush and process concrete."
+    },
+    "Concrete pulverizing attachments": {
+      "id": "product14",
+      "type": "type4",
+      "name": "Concrete pulverizing attachments",
+      "description": "Crush and process concrete on site."
+    },
+    "Stanley-laBounty": {
+      "id": "product15",
+      "type": "type5",
+      "name": "Stanley LaBounty F16",
+      "description": "Remote-controlled demolition robot."
+    },
+    "Power-cutter": {
+      "id": "product16",
+      "type": "type5",
+      "name": "Power Cutter",
+      "description": "Designed for heavier cutting of concrete and stone in alterations"
+    },
+    "Sledge-hammer": {
+      "id": "product17",
+      "type": "type5",
+      "name": "Sledge Hammer",
+      "description": "Tear through any wall with the sledge-hammer"
+    }
+  }]
+  }

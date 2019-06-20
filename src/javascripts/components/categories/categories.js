@@ -1,11 +1,13 @@
 import categoriesData from '../../helpers/data/categoriesData';
 import util from '../../helpers/util';
+import types from '../types/types';
 
 const seeTypeDiv = (e) => {
-  const boardId = e.target.closest('.card').id;
-  console.error('you clicked a button!', boardId);
+  const categoryId = e.target.closest('.card').id;
+  console.error('you clicked a button!', categoryId);
   document.getElementById('categories-page').classList.add('hide');
   document.getElementById('types-page').classList.remove('hide');
+  types.initTypes(categoryId);
 };
 
 const bindEvents = () => {

@@ -1,11 +1,13 @@
 import categoriesData from '../../helpers/data/categoriesData';
+import typesData from '../../helpers/data/typesData';
 import util from '../../helpers/util';
+import types from '../types/types';
 
 const seeTypeDiv = (e) => {
-  const boardId = e.target.closest('.card').id;
-  console.error('you clicked a button!', boardId);
+  const categoryId = e.target.closest('.card').id;
   document.getElementById('categories-page').classList.add('hide');
   document.getElementById('types-page').classList.remove('hide');
+  types.initTypes(categoryId);
 };
 
 const bindEvents = () => {
@@ -22,7 +24,7 @@ const writeCategories = (categories) => {
     domString += `<div id='${category.id}' class="card p-2">`;
     domString += '<div class="card-body">';
     domString += `<h5 class="card-title">${category.name}</h5>`;
-    domString += '<button class="btn btn-warning see-types">Types</button>';
+    domString += `<button class="btn btn-warning see-types">${category.types.length} Types</button>`;
     domString += '</div>';
     domString += '</div>';
     domString += '</div>';
@@ -33,8 +35,9 @@ const writeCategories = (categories) => {
 
 const initCategories = () => {
   categoriesData.loadCategories()
-    .then((resp) => {
-      writeCategories(resp.data.categories);
+    .then(resp => typesData.getTypesForEachCategory(resp.data.categories))
+    .then((categoriesWithTypes) => {
+      writeCategories(categoriesWithTypes);
     })
     .catch(err => console.error('error from loadCategories', err));
 };

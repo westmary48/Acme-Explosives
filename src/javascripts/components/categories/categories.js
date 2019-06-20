@@ -5,7 +5,7 @@ const initCategories = () => {
     .then((resp) => {
       console.error('resp', resp.data.categories);
     })
-    .catch(err => console.error('error from load categories', err));
+    .catch(err => console.error('error from loadCategories', err));
 };
 
 export default { initCategories };

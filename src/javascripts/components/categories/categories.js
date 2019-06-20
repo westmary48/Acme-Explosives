@@ -1,11 +1,26 @@
 import categoriesData from '../../helpers/data/categoriesData';
+import util from '../../helpers/util';
+
+const writeCategories = (categories) => {
+  let domString = '';
+  categories.forEach((category) => {
+    domString += '<div class="col-3">';
+    domString += `<div id='${category.id}' class="card p-2">`;
+    domString += '<div class="card-body">';
+    domString += `<h5 class="card-title">${category.name}</h5>`;
+    domString += '</div>';
+    domString += '</div>';
+    domString += '</div>';
+  });
+  util.printToDom('user-categories', domString);
+};
 
 const initCategories = () => {
   categoriesData.loadCategories()
     .then((resp) => {
-      console.error('resp', resp.data.categories);
+      writeCategories(resp.data.categories);
     })
     .catch(err => console.error('error from loadCategories', err));
 };
 
-export default { initCategories };
+export default { writeCategories,initCategories };
